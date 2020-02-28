@@ -4,3 +4,4 @@ linters:
 files:
   ignore:
     - 'node_modules/*'
+    - 'src/**.test.js'
