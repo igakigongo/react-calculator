@@ -12,7 +12,7 @@ test('renders without crashing', () => {
 
 test('renders react calculator text', () => {
   const { getByText } = render(<App />);
-  const ele = getByText(/react calculator/i);
+  const ele = getByText(/calculator/i);
   expect(ele).toBeInTheDocument();
 });
 
