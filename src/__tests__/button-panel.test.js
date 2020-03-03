@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer'; 
-import ButtonPanel, { keys } from './index';
-import Button from '../Button';
+import ButtonPanel, { keys } from '../components/button-panel';
+import Button from '../components/button';
 
 describe('<ButtonPanel>', () => {
   it('renders', () => {

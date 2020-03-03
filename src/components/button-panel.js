@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import Button from './button';
 
 const ButtonPanel = () => {
   const keys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer'; 
-import Display from './index';
+import Display from '../components/display';
 
 describe('<Display>', () => {
   it('renders a result', () => {

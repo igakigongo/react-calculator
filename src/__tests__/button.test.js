@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Button from './index';
+import Button from '../components/button';
 
 describe('<Button>', () => {
   it('renders a name from props', () => {
