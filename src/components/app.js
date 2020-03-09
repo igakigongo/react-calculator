@@ -1,18 +1,43 @@
 import './app.css';
-import React from 'react';
-import Display from './display';
+import React, { useState } from 'react';
 import ButtonPanel from './button-panel';
+import Display from './display';
+import calculate from '../logic/calculate';
 
-const App = () => (
-  <div className="app">
-    <header className="app-header">
-      <h1>Calculator</h1>
-    </header>
-    <main className="calculator">
-      <Display />
-      <ButtonPanel />
-    </main>
-  </div>
-);
+const App = () => {
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
+  const [total, setTotal] = useState(null);
+
+  const handleClick = buttonName => {
+    try {
+      const {
+        next: nextVal,
+        operation: operationVal,
+        total: totalVal,
+      } = calculate({ total, next, operation }, buttonName);
+      setNext(nextVal);
+      setOperation(operationVal);
+      setTotal(totalVal);
+    } catch ({ message }) {
+      setTotal(message);
+      setTimeout(() => {
+        setTotal('0');
+      }, 2000);
+    }
+  };
+
+  return (
+    <div className="app">
+      <header className="app-header">
+        <h1>Calculator</h1>
+      </header>
+      <main className="calculator">
+        <Display result={total} />
+        <ButtonPanel clickHandler={handleClick} />
+      </main>
+    </div>
+  );
+};
 
 export default App;
