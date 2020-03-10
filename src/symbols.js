@@ -1,6 +1,6 @@
 const Symbols = {
   ADDITION: '+',
-  DIVISION: '',
+  DIVISION: '÷',
   MULTIPLICATION: 'x',
   PERCENTAGE: '%',
   SUBTRACTION: '-',

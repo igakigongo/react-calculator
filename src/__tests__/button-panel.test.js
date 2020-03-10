@@ -5,7 +5,7 @@ import Button from '../components/button';
 
 describe('<ButtonPanel>', () => {
   it('renders', () => {
-    const renderer = create(<ButtonPanel />);
+    const renderer = create(<ButtonPanel clickHandler={() => {}} />);
 
     const root = renderer.root;
     expect(root).toBeDefined();
