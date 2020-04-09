@@ -4,18 +4,27 @@ html {
   font-size: 100%;
 }
 
-.app {
+body {
+  font-family: 'Oswald', sans-serif;
+
+  button {
+    font-family: inherit;
+  }
+}
+
+#root, .app {
+  align-content: flex-end;
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   text-align: center;
 }
 
-.app-header {
-  min-height: 2.25rem;
+.app {
+  align-content: flex-end;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .app-link {
@@ -23,10 +32,23 @@ html {
 }
 
 .calculator {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 700px;
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .calculator {
+    height: 70vh;
+    margin-top: 6em;
+  }
 }
 
 .display {
@@ -35,22 +57,22 @@ html {
   border: .0625rem solid #282c34;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
-  box-sizing: border-box;
   display: flex;
-  font-size: xx-large;
-  height: 100px;
+  font-size: 1.2em;
+  font-weight: 400;
+  height: 15%;
   justify-content: flex-end;
   padding: 1rem;
 }
 
-.button-panel {
-  display: flex;
+.panel {
+  flex-grow: 1;
 }
 
 .button {
   border: .0625rem solid #282c34;
-  font-size: larger;
-  height: 100px;
+  height: 20%;
+  font-size: 1em;
 }
 
 .button:hover {

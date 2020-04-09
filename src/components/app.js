@@ -1,4 +1,4 @@
-import './app.css';
+import './app.scss';
 import React, { useState } from 'react';
 import ButtonPanel from './button-panel';
 import Display from './display';
@@ -28,15 +28,12 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Calculator</h1>
-      </header>
+    <>
       <main className="calculator">
         <Display result={total} />
         <ButtonPanel clickHandler={handleClick} />
       </main>
-    </div>
+    </>
   );
 };
 
