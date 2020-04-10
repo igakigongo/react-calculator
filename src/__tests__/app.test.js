@@ -10,12 +10,6 @@ test('renders without crashing', () => {
   ReactDOM.render(<App />, div);
 });
 
-test('renders react calculator text', () => {
-  const { getByText } = render(<App />);
-  const ele = getByText(/calculator/i);
-  expect(ele).toBeInTheDocument();
-});
-
 test('renders the display and button panel', () => {
   const renderer = create(<App />);
   const { root } = renderer;
