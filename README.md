@@ -14,6 +14,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - ES6
   - Jest
 
+## Screenshots
+
+| Operation | Result |
+|-------|-------|
+| ![](screenshots/operation.png) | ![](screenshots/result.png) |
+
 ## Getting Started
 
 Clone this repository on your machine.
@@ -45,20 +51,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Screenshots
-
-| Operation | Result |
-|-------|-------|
-| ![](screenshots/operation.png) | ![](screenshots/result.png) |
-
 ## Features To Add
 
-Calculator input is not reset after the result is evaluated, when a user clicks on a digit it just appends it to the old result. This implies that the user has to clear the screen after each operation, in order to begin performing the next computation/operation. This behavior will be rectified in the next version.
-
+Calculator input is not reset after the result is evaluated; when a user clicks on a digit it just appends it to the old result. This implies that the user has to clear the screen after each operation, in order to begin performing the next computation/operation. This behavior will be rectified in the next version.
 
 ## Authors
 
 * [**Edward Iga Kigongo**](github.com/igakigongo)
+
+## Contact
+* Email: igakigongo@gmail.com
+* LinkedIn: https://www.linkedin.com/in/igakigongo/
+* PluralSight: https://app.pluralsight.com/profile/edward-iga
 
 ## License
 
